@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        img {
+            width: 100%; /* takes the 100 % width of its container (.box div)*/
+            height: 100%; /* takes the 100 % height of its container (.box div)*/
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .header {
+            float: left;
+            width: 33%;
+            padding: 10px;
+            height: 250px; /* Should be removed. Only for demonstration */
+        }
+        .column {
+            float: left;
+            width: 33%;
+            padding: 10px;
+            height: 250px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row {
+            line-height: 5px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="header" style="background-color:#aaa;">
+            <a href="https://poolueberdachung.de/"> <img src="images/Logo TROPICA.jpg"> </a>
+        </div>
+        <div class="column" style="background-color:#aaa;">
+            <p> Sven Geyger </p>
+            <p> Inhaber/Geschäftsführer </p>
+            <p> Geyger GbR Poolüberdachungen </p>
+            <p> Druckereistraße 9 </p>
+            <p> 04159 </p>
+            <p> Stahmeln </p>
+            <br> <br />
+            <p> Tel.: 0341 4680180 </p>
+            <p> E-Mail: info@poolueberdachung.de </p>
+        </div>
+        <div class="column" style="background-color:#aaa;">
+            <p> Dirk Geyger </p>
+            <p> Inhaber/Geschäftsführer </p>
+            <p> Geyger GbR Poolüberdachungen </p>
+            <p> Druckereistraße 9 </p>
+            <p> 04159 </p>
+            <p> Stahmeln </p>
+            <br> <br />
+            <p> Tel.: 0341 4680180 </p>
+            <p> E-Mail: info@poolueberdachung.de </p>
+        </div>
+    </div>
+    <div class="row">
+        <a href="https://poolueberdachung.de/"> <img src="images/Holzdeck .JPG"> </a>
+    </div>
+    </div>
+</body>
+</html>
